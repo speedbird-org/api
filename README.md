@@ -17,11 +17,11 @@ All apis calls to fleettrack server should be addressed to `https//app.fleettrac
 This api is called by `efleet` to create a geofence with `loadId` and `loadType`
 
 **Method**
-
+<br/>
 `GET`
 
 **Endpoint**
-
+<br/>
 `/api/efleet/mocl/create_geofence_with_loadid`
 
 **Parameters**<br/>
