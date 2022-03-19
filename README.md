@@ -33,7 +33,7 @@ This api is called by `efleet` to create a geofence with `loadId`, `loadType` an
 `loadType` - **Loading/Unloading type `[L/UL]`<br/>
 
 **Success Response**<br/>
- Redirect to `https://efleet-mocl.fleettrack.co.in`
+ Redirect to `https://efa.fleettrack.co.in`
 
 **Failure Response**
 <br/>
@@ -49,4 +49,4 @@ This api is called by `efleet` to create a geofence with `loadId`, `loadType` an
 
 `https://app.fleettrack.co.in/api/efleet/create_geofence_with_loadid?token=mocl_dummy_token&clientCode=mocl&loadId=test&loadType=L`
 
-After creating geofence the url will redirect to [efa.fleettrack.co.in](efa.fleettrack.co.in) where you should enter the `username` and `password` for the **client** for which they are creating the geofence.
+After creating geofence the url will redirect to [efa.fleettrack.co.in](efa.fleettrack.co.in) where you should enter the `username` and `password` for the **client** for which you are creating the geofence.
