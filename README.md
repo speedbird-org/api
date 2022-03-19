@@ -16,22 +16,14 @@ All apis calls to fleettrack server should be addressed to `https//app.fleettrac
 ### 1.1.1 Create geofence
 This api is called by `efleet` to create a geofence with `loadId`, `loadType` and `clientCode`
 
-**Method**
-<br/>
-`GET`
+Method | Endpoint | Parameters | Explanation
+-- | -- | -- | --
+GET | `/api/efleet/create_geofence_with_loadid` | token | **Token to authenticate efleet to fleettrack api service. This is constant for efleet.
+  |   | clientCode | **Identify the client
+  |   | loadId | **Id unique to each geofence point
+  |   | loadType | **Loading/Unloading type [L/UL]
 
-**Endpoint**
-<br/>
-`/api/efleet/create_geofence_with_loadid`
-
-**Parameters**<br/>
-** These params are mandatory
-
-`token` - **Token to authenticate efleet to fleettrack api service. This is constant for efleet. <br/>
-`clientCode` - **Identify the client<br/>
-`loadId` - **Id unique to each geofence point<br/>
-`loadType` - **Loading/Unloading type `[L/UL]`<br/>
-
+  
 **Success Response**<br/>
  Redirect to `https://efa.fleettrack.co.in`
 
