@@ -27,7 +27,7 @@ This api is called by `efleet` to create a geofence with `loadId`, `loadType` an
 **Parameters**<br/>
 ** These params are mandatory
 
-`token` - **Token to authenticate efleet on behalf of mocl <br/>
+`token` - **Token to authenticate efleet to fleettrack api service. This is constant for efleet. <br/>
 `clientCode` - **Identify the client<br/>
 `loadId` - **Id unique to each geofence point<br/>
 `loadType` - **Loading/Unloading type `[L/UL]`<br/>
@@ -48,3 +48,5 @@ This api is called by `efleet` to create a geofence with `loadId`, `loadType` an
 **Example**
 
 `https://app.fleettrack.co.in/api/efleet/create_geofence_with_loadid?token=mocl_dummy_token&clientCode=mocl&loadId=test&loadType=L`
+
+After creating geofence the url will redirect to [efa.fleettrack.co.in](efa.fleettrack.co.in) where you should enter the `username` and `password` for the **client** for which they are creating the geofence.
